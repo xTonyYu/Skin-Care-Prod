@@ -12,7 +12,17 @@
 
     <h1>Users Index Page</h1>
 
-    <p><%= user.firstName %></p>
+    <% user.forEach(element => { %>
+        <ul><%= element.firstName %> <%= element.lastName %> 
+            <li><%= element.email %> </li>
+        </ul>
+        
+        
+        <form style="display: inline;" action="/users/<%= element._id %>?_method=DELETE" method="POST">
+            <button type="submit">Delete</button>
+          </form>
+
+   <% }); %>
     
 </body>
 

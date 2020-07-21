@@ -25,7 +25,17 @@ router.post('/', (req, res) => {
         if(err) console.log(err);
         
         console.log(newUser)
-        
+
+        res.redirect('/users')
+    })
+})
+
+//Delete User
+router.delete('/:id', (req, res) => {
+
+    db.User.findByIdAndDelete(req.params.id, (err, deletedUser) => {
+        if(err) console.log(err);
+
         res.redirect('/users')
     })
 })
