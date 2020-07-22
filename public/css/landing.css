@@ -1,0 +1,82 @@
+body {
+    background-color: rgba(212,252,245); 
+}
+.main-homepage {
+    padding: 80px;
+    background-color: white;
+}
+/*********************************** CAROUSEL ***********************************/
+.carousel {
+    background-color: rgba(212,252,245);
+    border-radius: 5%;
+}
+.carousel-inner {
+    border-radius: 3%;
+}
+.carousel-item {
+    height: 400px;
+
+}
+
+/*********************************** LINKS SECTION ***********************************/
+a {
+    text-decoration: none;
+    color: black;
+}
+.shop-by-links-container {
+    padding: 100px 100px 100px 25px;
+}
+.shop-by-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*********************************** GALLERY ***********************************/
+.products-container {
+    padding: 25px 100px 100px 100px;
+    margin-bottom: 50px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.image-box {
+    background-color: white;
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.gallery img {
+    border: black solid .5px;
+    border-radius: 3%;
+    min-width: 280px;
+    max-width: 300px;
+    max-height: 280px;
+    opacity: 0.85;
+    justify-content: center;
+    /* apply transition property to default state */
+    transition: opacity 0.2s linear, transform 0.5s ease-in-out;
+}
+.image-box img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.product-rating-landing-page {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    height: 30px;
+}
+.products-and-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
