@@ -1,6 +1,10 @@
 * {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
 }
 
 /* HEADER */
@@ -23,7 +27,6 @@ header {
 nav a {
     padding: 10px;
 }
-
 
 
 /* FOOTER */
