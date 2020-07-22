@@ -75,3 +75,7 @@ h1 {
 .about-blurb {
     margin-top: 40px;
 }
+
+.personal-info a {
+    color: black;
+}
