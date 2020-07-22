@@ -40,5 +40,15 @@ router.delete('/:id', (req, res) => {
     })
 })
 
+//Confirm Page
+router.post('/confirm', (req, res) => {
+    db.User.create(req.body, (err, confirmSignUp) => {
+        if (err) console.log(err);
+
+            res.render('/confirm', {
+                user: confirmSignUp
+            })
+        });
+    })
 
 module.exports = router;
