@@ -70,7 +70,7 @@ a {
     border: 0;
     border-radius: 14px;
     height: 28px;
-    width: 246px;
+    max-width: 246px;
     padding-left: 27px;
 }
 .search img {
