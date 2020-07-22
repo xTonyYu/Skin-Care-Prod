@@ -22,10 +22,14 @@ router.post('/', (req, res) => {
     db.User.create(req.body, (err, newUser) => {
         if(err) console.log(err);
         
-        console.log(newUser)
+        console.log(newUser);
 
-        res.render('confirm', {
-            user: newUser
+        newUser.photoUrl = "https://www.creativefabrica.com/wp-content/uploads/2019/06/Monstera-leaf-1-580x386.jpg"
+        newUser.save((err, savedUser) => {
+
+            res.render('confirm', {
+                user: newUser
+            })
         })
     })
 })
