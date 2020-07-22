@@ -4,10 +4,10 @@
     justify-content: center;
     width: 80%;
     height: 50%;
-    margin: 0 auto;
+    margin: 40px auto;
     /* padding-left: 100px; */
     /* padding-right: 100px; */
-    padding: 100px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -34,9 +34,9 @@ h5 {
 }
 
 button {
-    display: inline;
-    width: 20%;
-    font-size: 60%;
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
     padding: 16px 10px;
     font-weight: 500;
     border-color: none;
@@ -44,7 +44,13 @@ button {
     text-align: center;
     word-wrap: break-word;
 }
-
+button a {
+    font-size: 14px;
+    color: white;
+}
+button a:hover {
+    text-decoration: none;
+}
 #homepage {
     color: white;
     background: rgba(8, 157, 121);
@@ -52,4 +58,12 @@ button {
 
 #blog {
     border-color: lightgrey;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px)  {
+    .thank-you img {
+        /* min-width: 550px; */
+        width: 100%;
+    }
 }

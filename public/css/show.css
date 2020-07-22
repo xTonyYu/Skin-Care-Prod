@@ -89,7 +89,6 @@ main {
 }
 .prod-nav {
     margin: 10px 0;
-    overflow: scroll;
 }
 .prod-nav a {
     color: black;
