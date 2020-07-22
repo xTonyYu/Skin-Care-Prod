@@ -8,6 +8,7 @@
     <%- include('partials/head.ejs') %>
 
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/users.css">
 
     <title>Skin Care Reviews</title>
 </head>
@@ -18,18 +19,33 @@
 
     <h1>Users Index Page</h1>
 
-    <% user.forEach(element => { %>
-        <ul><%= element.firstName %> <%= element.lastName %> 
-            <li><%= element.email %> </li>
+    <div class="users-container">
+        <ul class="categories">
+            <li>User Photo</li>
+            <li>First Name</li>
+            <li>Last Name</li>
+            <li>Email Address</li>
+            <li>Remove?</li>
         </ul>
-        
-        
-        <form style="display: inline;" action="/users/<%= element._id %>?_method=DELETE" method="POST">
-            <button type="submit">Delete</button>
-          </form>
+       
+            <% user.forEach(element => { %>
+               
+                <ul class="users">
+                    <li><img class="leaf" src="../images/leaf.png"/></li>
+                    <li><%= element.firstName %></li>
+                    <li><%= element.lastName %> </li>
+                    <li><%= element.email %> </li>
+                
+                    <li class="del-button">
+                        <form style="display: inline;" action="/users/<%= element._id %>?_method=DELETE" method="POST">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </li>
 
-   <% }); %>
-    
+                </ul>
+            <% }); %>
+    </div>
+
    <%- include('partials/footer') %>
 
 </body>

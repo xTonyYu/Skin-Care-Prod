@@ -1,0 +1,56 @@
+li {
+    list-style: none;
+}
+
+h1 {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.leaf {
+    width: 50px;
+
+}
+
+.users {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    /* flex-wrap: wrap; */
+}
+
+li {
+    width: 100px;
+    padding-right: 8px;
+    word-wrap: break-word;
+}
+
+.users-alt {
+    background: rgb(220, 236, 233);
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 25px;
+    font-weight: 600;
+    /* flex-wrap: wrap; */
+}
+
+.users-container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+button {
+    border-radius: 15px;
+    padding: 2px 30px;
+    font-weight: 500;
+    background-color: #219653;
+}
+
+.del-button {
+    padding-left: 10px;
+}
