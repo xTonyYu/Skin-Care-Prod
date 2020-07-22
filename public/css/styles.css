@@ -97,7 +97,8 @@ a {
 footer {
     display: flex;
     background-color: #BFD7C3; 
-    margin-top: 100px;
+    margin-top: 10px;
+    padding-top: 15px;
     bottom: 0;
 }
 

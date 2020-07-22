@@ -28,7 +28,7 @@
         </ul>
        
             <% user.forEach(element => { %>
-               
+               <section class="user-row">
                 <ul class="users">
                     <li><img class="leaf" src="../images/leaf.png"/></li>
                     <li><%= element.firstName %></li>
@@ -42,6 +42,7 @@
                     </li>
 
                 </ul>
+            </section>
             <% }); %>
     </div>
 
