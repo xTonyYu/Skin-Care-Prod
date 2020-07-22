@@ -1,6 +1,18 @@
+body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 .main-homepage {
-    padding: 80px;
+    padding: 10vw;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+   
 }
 /*********************************** CAROUSEL ***********************************/
 
@@ -17,20 +29,27 @@
 a {
     text-decoration: none;
     color: black;
+    font-size: 100%;
+    padding: 10px;
 }
 .shop-by-links-container {
-    padding: 25px 100px 100px 100px;
+    padding: 10px 25px 25px 25px;
     margin-top: 75px;
 }
 .shop-by-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    font-size: small;
 }
 
 
 /*********************************** GALLERY ***********************************/
 .products-container {
-    padding: 25px 100px 100px 100px;
+    max-width: 950px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .gallery{
@@ -75,4 +94,10 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+h4 {
+    font-size: 14px;
+}
+.products-and-info-container p {
+    font-size: 12px;
 }

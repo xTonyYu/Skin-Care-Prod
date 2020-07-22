@@ -35,6 +35,7 @@ main {
 .reviews h4,
 .recommended h4 {
     margin-bottom: 30px ;
+    font-size: 14px;
 }
 
 .small-image-div {
@@ -90,6 +91,9 @@ main {
     margin: 10px 0;
     overflow: scroll;
 }
+.prod-nav a {
+    color: black;
+}
 
 .nav-a {
     padding-right: 8px;
@@ -123,9 +127,13 @@ h6,
 .reviewer p,
 .reviewer .stars {
     margin-bottom: 4px;
+    font-size: 14px;
+    
 }
 .reviewer h6 {
     font-weight: bold;
+    font-size: 14px;
+
 }
 .reviewer p {
     font-size: 14px;
@@ -160,6 +168,24 @@ h6,
 .prod-img {
     width: 210px;
     height: 245px;
+}
+
+/* Lora added in the hover effect  */
+.prod-card img {
+    border: black solid .5px;
+    border-radius: 3%;
+    min-width: 250px;
+    max-width: 275px;
+    max-height: 250px;
+    opacity: 0.85;
+    justify-content: center;
+    /* apply transition property to default state */
+    transition: opacity 0.2s linear, transform 0.5s ease-in-out;
+}
+.prod-card img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px)  {

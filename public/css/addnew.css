@@ -1,0 +1,41 @@
+.form-container {
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    border-style: solid;
+    border-radius: 15px;
+    border-color: lightgrey;
+}
+
+.form-border {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sign-up {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+#add-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+#act-button {
+    color: white;
+    background: rgba(8, 157, 121);
+    border-color: white;
+    padding: 8px 45px;
+}
