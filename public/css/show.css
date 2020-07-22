@@ -28,6 +28,9 @@ main {
     margin: 20px 30px;
     margin-bottom: 130px;
 }
+.prod-images {
+    /* width: 100%; */
+}
 
 .reviews h4,
 .recommended h4 {
@@ -45,21 +48,24 @@ main {
     margin: 20px;
 }
 
-
 .main-image {
-    width: 370px;
-    height: 480px;
+    width: 100%;
+    max-width: 370px;
+    max-height: 480px;
     border-radius: 20px;
     background-color: white;
 }
 
 /* ***** product-desc */
 .product-desc {
+    width: 100%;
     max-width: 520px;
-    min-width: 500px;
+    /* min-width: 500px; */
     padding: 20px 30px;
 }
-
+.prod-desc-header {
+    flex-wrap: wrap;
+}
 .likes {
     min-width: 150px;
 }
@@ -78,24 +84,31 @@ main {
     justify-content: center;
 }
 
+.prod-details {
+    width: 100%;
+}
 .prod-nav {
     margin: 10px 0;
-
+    overflow: scroll;
 }
 .prod-nav a {
     color: black;
 }
 
-/* .nav-a {
-    text-decoration: none;
-} */
+.nav-a {
+    padding-right: 8px;
+}
 
 .nav-a:hover {
     text-decoration: none;
     border-bottom: solid 4px #bfd7c3 ;
 }
 
-/* ****** reviews */
+.details {
+    width: 100%;
+}
+
+/* ****** Reviews */
 
 .reviews {
     padding-left: 20px;
@@ -103,12 +116,13 @@ main {
 
 .review {
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .reviewer {
     width: 20%;
+    min-width: 100px;
 }
-
 h6,
 .reviewer p,
 .reviewer .stars {
@@ -125,14 +139,18 @@ h6,
     font-size: 14px;
 }
 
+.review-detail-section {
+    width: 80%
+}
+.review-title {
+    flex-wrap: wrap;
+
+}
 .thumb {
     text-decoration: none;
     padding: 0 10px;
 }
 
-.review-detail-section {
-    width: 80%
-}
 
 /* ***** Recommended */
 
@@ -152,7 +170,6 @@ h6,
     height: 245px;
 }
 
-
 /* Lora added in the hover effect  */
 .prod-card img {
     border: black solid .5px;
@@ -169,4 +186,13 @@ h6,
     opacity: 1;
     transform: scale(1.1);
     cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px)  {
+    .reviews {
+        padding-left: 0;
+    }
+    .review-detail-section {
+        width: 100%
+    }
 }
