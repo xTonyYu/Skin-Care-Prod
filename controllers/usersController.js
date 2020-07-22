@@ -1,5 +1,3 @@
-//Read Route
-
 const express = require('express');
 const router = express.Router();
 const db = require('../models');
@@ -39,6 +37,5 @@ router.delete('/:id', (req, res) => {
         res.redirect('/users')
     })
 })
-
 
 module.exports = router;
