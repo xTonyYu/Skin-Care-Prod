@@ -26,6 +26,7 @@ header {
     background-color: #BFD7C3; 
     height: 100px;
 }
+
 a {
     text-decoration: none;
 }
@@ -35,7 +36,7 @@ a {
     align-items: center;
 }
 
-.logo img{
+.logo img {
     margin-left: 20px;
     width: 130px;
     height: 45.5px;
@@ -44,14 +45,17 @@ a {
 .nav {
     list-style: none;
 }
+
 .nav li {
     margin: 10px 0;
 }
+
 .nav li a {
     color: #344438;
     padding: 10px;
     font-size: 13px;
 }
+
 .nav li a:hover {
     text-decoration: none;
     border-bottom: solid 4px #e1ffe6 ;
@@ -66,6 +70,7 @@ a {
     height: 30px;
     
 }
+
 .search input {
     border: 0;
     border-radius: 14px;
@@ -73,6 +78,7 @@ a {
     max-width: 246px;
     padding-left: 27px;
 }
+
 .search img {
     top: 2px;
     left: 3px;
@@ -86,6 +92,7 @@ a {
     padding-right: 25px;
     text-decoration: none;
 }
+
 .icons a {
     text-decoration: none;
 
