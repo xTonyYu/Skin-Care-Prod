@@ -21,8 +21,7 @@
     <div class="users-container">
         <ul class="categories">
             <li>User Photo</li>
-            <li>First Name</li>
-            <li>Last Name</li>
+            <li>Name</li>
             <li>Email Address</li>
             <li>Remove?</li>
         </ul>
@@ -30,8 +29,8 @@
             <% user.forEach((element, index) => { %>
                 <ul class="users <%= index % 2 === 0 ? 'greyarea' : null%>">
                     <li><img class="leaf" src="<%= element.photoUrl %>"/></li>
-                    <li><%= element.firstName %></li>
-                    <li><%= element.lastName %> </li>
+                    <li><%= element.firstName %>
+                        <%= element.lastName %> </li>
                     <li><%= element.email %> </li>
                 
                     <li class="del-button">
