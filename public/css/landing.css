@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(212,252,245); 
+    background-color: #d4fcf5; 
 }
 .main-homepage {
     padding: 80px;
@@ -7,7 +7,7 @@ body {
 }
 /*********************************** CAROUSEL ***********************************/
 .carousel {
-    background-color: rgba(212,252,245);
+    background-color: rgb(212, 252, 245);
     border-radius: 5%;
 }
 .carousel-inner {
