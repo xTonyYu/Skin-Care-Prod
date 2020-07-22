@@ -187,6 +187,13 @@ h6,
     cursor: pointer;
 }
 
+.add-butt {
+    padding: 15px 45px;
+    color: white;
+    background: rgb(8, 157, 121);
+    border: none;
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px)  {
     .reviews {
         padding-left: 0;
