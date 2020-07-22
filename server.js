@@ -33,6 +33,11 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+//Show page
+app.get('/show', (req, res) => {
+    res.render('show');
+});
+
 //About Page
 app.get('/about', (req, res) => {
     res.render('about');

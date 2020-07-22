@@ -18,12 +18,14 @@
     <!-- Main -->
     <main>
         <section class="show-prod">
-            <div class="small-image">
-                <img src="/images/product.jpeg" alt="Small Product Image1">
-                <img src="/images/product.jpeg" alt="Small Product Image2">
-            </div>
-            <div class="main-image">
-                <img src="/images/product.jpeg" alt="Main Product Image">
+            <div class="prod-images">
+                <div class="small-image-div">
+                    <img src="/images/product.jpeg" alt="Small Product Image1" class="small-image">
+                    <img src="/images/product.jpeg" alt="Small Product Image2" class="small-image">
+                </div>
+                <div class="main-image">
+                    <img src="/images/product.jpeg" alt="Main Product Image" class="main-image">
+                </div>
             </div>
             <div class="product-desc">
                 <div class="prod-desc-header">
@@ -41,12 +43,12 @@
                 </div>
                 <div class="prod-details">
                     <nav class="prod-nav">
-                        <a href="#details">Details</a>
-                        <a href="#ingredients">Ingredients</a>
-                        <a href="#howtouse">How to Use</a>
-                        <a href="#shippingreturn">Shipping & Return</a>
+                        <a href="#details" class="nav-a">Details</a>
+                        <a href="#ingredients" class="nav-a">Ingredients</a>
+                        <a href="#howtouse" class="nav-a" >How to Use</a>
+                        <a href="#shippingreturn" class="nav-a">Shipping & Return</a>
                     </nav>
-                    <div class="details hidden" id="details">
+                    <div class="details" id="details">
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde labore obcaecati tempore non maxime vitae ad cumque id debitis. Necessitatibus soluta nemo reiciendis, enim aspernatur ducimus quasi. Quos nisi iure, ut tempora odio iste nesciunt nemo facilis vitae aliquam earum repellendus atque accusantium, et velit possimus maiores incidunt officia praesentium.
                         </p> 
@@ -70,6 +72,7 @@
         </section>
         <section class="reviews">
             <h4>Reviews</h4>
+            <!-- EJS loop using data from MongoDB -->
             <div class="review">
                 <div class="reviewer">
                     <h6>EJS Customer Name</h6>

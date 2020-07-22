@@ -6,8 +6,19 @@
     box-sizing: border-box;
 
 }
+/* 
+* LAYOUT
+****************************************** */
 
-/* HEADER */
+.hidden {
+    display: none;
+  }
+
+
+/* 
+ * HEADER
+****************************************** */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -29,7 +40,9 @@ nav a {
 }
 
 
-/* FOOTER */
+/* 
+* FOOTER
+****************************************** */
 
 footer {
     display: flex;
