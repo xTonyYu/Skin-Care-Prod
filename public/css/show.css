@@ -89,7 +89,6 @@ main {
 }
 .prod-nav {
     margin: 10px 0;
-    overflow: scroll;
 }
 .prod-nav a {
     color: black;
@@ -186,6 +185,13 @@ h6,
     opacity: 1;
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.add-butt {
+    padding: 15px 45px;
+    color: white;
+    background: rgb(8, 157, 121);
+    border: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px)  {
