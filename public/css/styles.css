@@ -48,6 +48,7 @@ a {
     margin: 10px 0;
 }
 .nav li a {
+    color: #344438;
     padding: 10px;
 }
 .nav li a:hover {
@@ -94,11 +95,12 @@ a {
 
 footer {
     display: flex;
+    background-color: rgba(212,252,245); 
     margin-top: 100px;
     bottom: 0;
 }
 
-footer p {
+footer h5 {
     font-weight: bold;
 }
 
@@ -111,4 +113,12 @@ footer p {
 footer section ul {
     list-style: none;
     padding: 0;
+}
+footer section ul a{
+    text-decoration: none;
+    padding: 0;
+    color: #344438;
+}
+footer section ul a:hover{
+    text-decoration: none;
 }
