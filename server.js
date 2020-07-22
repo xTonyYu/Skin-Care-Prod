@@ -49,6 +49,11 @@ app.get('/about', (req, res) => {
     res.render('about');
 });
 
+//Confirmation Page
+app.get('/confirm', (req, res) => {
+    res.render('confirm');
+});
+
 
 // 404 Page-------------------------------
 app.get('*', (req, res) => {

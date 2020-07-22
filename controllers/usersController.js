@@ -26,7 +26,7 @@ router.post('/', (req, res) => {
         
         console.log(newUser)
 
-        res.redirect('/users')
+        res.redirect('/confirm')
     })
 })
 
