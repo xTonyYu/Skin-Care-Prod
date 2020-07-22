@@ -23,13 +23,15 @@ main {
 
 /* ***** prod-images */
 .prod-images,
-.reviews {
+.reviews,
+.recommended {
     margin: 20px 30px;
+    margin-bottom: 130px;
 }
 
-.show-prod,
-.reviews {
-    /* margin: 50px 70px ; */
+.reviews h4,
+.recommended h4 {
+    margin-bottom: 30px ;
 }
 
 .small-image-div {
@@ -44,9 +46,10 @@ main {
 
 
 .main-image {
-    width: 377px;
-    height: 533px;
+    width: 370px;
+    height: 480px;
     border-radius: 20px;
+    background-color: white;
 }
 
 /* ***** product-desc */
@@ -54,6 +57,17 @@ main {
     max-width: 520px;
     min-width: 500px;
     padding: 20px 30px;
+}
+
+.likes {
+    min-width: 150px;
+}
+
+.stars .fa {
+    font-size: 12px;
+}
+.rating-number {
+    display: inline;
 }
 
 .buy {
@@ -78,11 +92,54 @@ main {
 }
 
 /* ****** reviews */
-
+.
 .reviews {
     padding-left: 20px;
 }
 
+.review {
+    margin-bottom: 40px;
+}
+
 .reviewer {
-    width: 30%;
+    width: 20%;
+}
+
+h6,
+.reviewer p,
+.reviewer .stars {
+    margin-bottom: 4px;
+}
+.reviewer h6 {
+    font-weight: bold;;
+}
+.reviewer p {
+    font-size: 14px;
+}
+
+.thumb {
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.review-detail-section {
+    width: 80%
+}
+
+/* ***** Recommended */
+
+.prod-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.prod-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prod-img {
+    width: 210px;
+    height: 245px;
 }

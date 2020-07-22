@@ -21,10 +21,10 @@
             <div class="prod-images">
                 <div class="small-image-div">
                     <img src="/images/product.jpeg" alt="Small Product Image1" class="small-image">
-                    <img src="/images/product.jpeg" alt="Small Product Image2" class="small-image">
+                    <img src="/images/coverimages/Cover Image 2.jpg" alt="Small Product Image2" class="small-image">
                 </div>
                 <div class="main-image">
-                    <img src="/images/product.jpeg" alt="Main Product Image" class="main-image">
+                    <img src="/images/coverimages/Cover Image 2.jpg" alt="Main Product Image" class="main-image">
                 </div>
             </div>
             <div class="product-desc">
@@ -35,7 +35,14 @@
                         <h6>$14.80</h6>
                     </div>
                     <div class="likes">
-                        <p class="stars">* * * * * (134)</p>
+                        <ul class="stars">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <p class="rating-number">(134)</p>
+                        </ul>
                     </div>
                 </div>
                 <div class="buy">
@@ -73,10 +80,18 @@
         <section class="reviews">
             <h4>Reviews</h4>
             <!-- EJS loop using data from MongoDB -->
+            <% users.forEach(user => { %>
+             
             <div class="review">
                 <div class="reviewer">
-                    <h6>EJS Customer Name</h6>
-                    <h6>* * * * *</h6>
+                    <h6><%= user.firstName %> <%= user.lastName %></h6>
+                    <ul class="stars">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
                     <p>Skin Type</p>
                     <p>Skin Concerns</p>
                 </div>
@@ -84,16 +99,73 @@
                     <div class="review-title">
                         <h6>Review Title</h6>
                         <div class="thumbs">
-                            <a href="#"><img src="/images/thumb_up_alt_24px.png" alt="thumb up"> (1)</a>
-                            <a href="#"><img src="/images/thumb_down_alt_24px.png" alt="thumb down"> (0)</a>
+                            <a href="#" class="thumb"><img src="/images/thumb_up_alt_24px.png" alt="thumb up"> (1)</a>
+                            <a href="#" class="thumb"><img src="/images/thumb_down_alt_24px.png" alt="thumb down"> (0)</a>
                         </div>
                     </div>
-                    <p class="review-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vero error quas minus! Quos quis accusantium repellat praesentium incidunt earum vitae dolores, facere assumenda quidem voluptatum, accusamus libero!
+                    <p class="review-detail"><%= user.review %>
                     </p>
                 </div>
             </div>
+            <% }) %>
         </section>
-
+        <section class="recommended">
+            <h4>RECOMMENDED PRODUCTS</h4>
+            <div class="prod-container">
+                <div class="prod-card">
+                    <img src="/images/products/Product 1.jpg" alt="product 1" class="prod-img">
+                    <ul class="stars">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <p class="rating-number">(134)</p>
+                    </ul>
+                    <h6>Product Title</h6>
+                    <p>price</p>
+                </div>
+                <div class="prod-card">
+                    <img src="/images/products/Product 4.jpg" alt="product 4" class="prod-img">
+                    <ul class="stars">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <p class="rating-number">(134)</p>
+                    </ul>
+                    <h6>Product Title</h6>
+                    <p>price</p>
+                </div>
+                <div class="prod-card">
+                    <img src="/images/products/Product 2.jpg" alt="product 2" class="prod-img">
+                    <ul class="stars">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <p class="rating-number">(134)</p>
+                    </ul>
+                    <h6>Product Title</h6>
+                    <p>price</p>
+                </div>
+                <div class="prod-card">
+                    <img src="/images/products/Product 3.jpg" alt="product 3" class="prod-img">
+                    <ul class="stars">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <p class="rating-number">(134)</p>
+                    </ul>
+                    <h6>Product Title</h6>
+                    <p>price</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->

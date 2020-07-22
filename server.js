@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 4000;
+const db = require('./models');
 
 const usersController = require('./controllers/usersController');
 
@@ -35,7 +36,12 @@ app.get('/', (req, res) => {
 
 //Show page
 app.get('/show', (req, res) => {
-    res.render('show');
+    db.User.find((err, allUsers) => {
+        if(err) console.log(err);
+        res.render('show', {
+            users: allUsers,
+        });
+    })
 });
 
 //About Page
