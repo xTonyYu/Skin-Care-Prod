@@ -48,7 +48,8 @@ a {
 
 /*********************************** GALLERY ***********************************/
 .products-container {
-    padding: 25px 100px 100px 100px;
+    max-width: 950px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .gallery{
@@ -94,11 +95,9 @@ a {
     justify-content: center;
     align-items: center;
 }
-
 h4 {
     font-size: 14px;
 }
-
 .products-and-info-container p {
     font-size: 12px;
 }
