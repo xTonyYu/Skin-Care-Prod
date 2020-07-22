@@ -9,7 +9,7 @@ h1 {
 
 .leaf {
     width: 50px;
-
+    padding-left: 10px;
 }
 
 .users {
@@ -19,6 +19,11 @@ h1 {
     align-items: center;
     padding: 10px;
     margin: 0;
+}
+
+.user-row {
+    border-style: solid;
+    
 }
 
 li {
@@ -43,13 +48,16 @@ li {
 .users-container {
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 10px;
 }
 
 button {
     border-radius: 15px;
+    border-color: #219653;
     padding: 2px 30px;
     font-weight: 500;
     background-color: #219653;
+    color: white;
 }
 
 .del-button {
