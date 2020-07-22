@@ -6,10 +6,10 @@
 
     <%- include('partials/head.ejs') %>
 
-    <link rel="stylesheet" href="/css/users.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/users.css">
 
-    <title>Skin Care Reviews</title>
+    <title>Admin Page</title>
 </head>
 
 <body>
@@ -27,9 +27,8 @@
             <li>Remove?</li>
         </ul>
        
-            <% user.forEach(element => { %>
-               
-                <ul class="users">
+            <% user.forEach((element, index) => { %>
+                <ul class="users <%= index % 2 === 0 ? 'greyarea' : null%>">
                     <li><img class="leaf" src="../images/leaf.png"/></li>
                     <li><%= element.firstName %></li>
                     <li><%= element.lastName %> </li>
