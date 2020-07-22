@@ -1,20 +1,15 @@
-body {
-    background-color: #d4fcf5; 
-}
 .main-homepage {
     padding: 80px;
     background-color: white;
 }
 /*********************************** CAROUSEL ***********************************/
-.carousel {
-    background-color: rgb(212, 252, 245);
-    border-radius: 5%;
-}
+
 .carousel-inner {
-    border-radius: 3%;
+    /* border-radius: 7%;  thre is something on top of this and it looks crappy*/
+
 }
 .carousel-item {
-    height: 400px;
+    height: 100%;
 
 }
 
@@ -24,7 +19,8 @@ a {
     color: black;
 }
 .shop-by-links-container {
-    padding: 100px 100px 100px 25px;
+    padding: 25px 100px 100px 100px;
+    margin-top: 75px;
 }
 .shop-by-links {
     display: flex;
@@ -45,8 +41,8 @@ a {
 .image-box {
     background-color: white;
     padding: 5px;
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -54,9 +50,9 @@ a {
 .gallery img {
     border: black solid .5px;
     border-radius: 3%;
-    min-width: 280px;
-    max-width: 300px;
-    max-height: 280px;
+    min-width: 250px;
+    max-width: 275px;
+    max-height: 250px;
     opacity: 0.85;
     justify-content: center;
     /* apply transition property to default state */
