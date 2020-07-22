@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(212,252,245); 
+    background-color: #BFD7C3; 
     height: 100px;
 }
 a {
@@ -37,8 +37,8 @@ a {
 
 .logo img{
     margin-left: 20px;
-    width: 185px;
-    height: 65px;
+    width: 130px;
+    height: 45.5px;
 }
 
 .nav {
@@ -50,6 +50,7 @@ a {
 .nav li a {
     color: #344438;
     padding: 10px;
+    font-size: 13px;
 }
 .nav li a:hover {
     text-decoration: none;
@@ -95,7 +96,7 @@ a {
 
 footer {
     display: flex;
-    background-color: rgba(212,252,245); 
+    background-color: #BFD7C3; 
     margin-top: 100px;
     bottom: 0;
 }
@@ -118,6 +119,7 @@ footer section ul a{
     text-decoration: none;
     padding: 0;
     color: #344438;
+    font-size: 13px;
 }
 footer section ul a:hover{
     text-decoration: none;

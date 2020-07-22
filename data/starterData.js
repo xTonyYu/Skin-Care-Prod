@@ -15,7 +15,7 @@ const dataUsers = [
     firstName: 'Darth',
     lastName: 'Vader',
     email: 'DV@deathstar.org',
-    review: 'THis product really help smooth my skin after years fighting with jedis.'
+    review: 'This product really help smooth my skin after years fighting with jedis.'
     },
     {
     firstName: 'Nyota',
