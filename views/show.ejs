@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/show.css">
+    
+    <title>Skin Care Reviews</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <%- include('partials/nav.ejs') %>
+
+    <!-- Main -->
+    <main>
+        <section class="show-prod">
+            <div class="prod-images">
+                <div class="small-image-div">
+                    <img src="/images/product.jpeg" alt="Small Product Image1" class="small-image">
+                    <img src="/images/products/Product 2.jpg" alt="Small Product Image2" class="small-image">
+                </div>
+                <div class="main-image">
+                    <img src="/images/products/Product 2.jpg" alt="Main Product Image" class="main-image">
+                </div>
+            </div>
+            <div class="product-desc">
+                <div class="prod-desc-header">
+                    <div class="title-name">
+                        <h4>THE ORDINARY</h4>
+                        <h6>"Buffet"</h6>
+                        <h6>$14.80</h6>
+                    </div>
+                    <div class="likes">
+                        <ul class="stars">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <p class="rating-number">(134)</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="buy">
+                    <button type="submit" class="add-butt">ADD TO BAG</button>
+                </div>
+                <div class="prod-details">
+                    <nav class="prod-nav">
+                        <a href="#details" class="nav-a">Details</a>
+                        <a href="#ingredients" class="nav-a">Ingredients</a>
+                        <a href="#howtouse" class="nav-a" >How to Use</a>
+                        <a href="#shippingreturn" class="nav-a">Shipping & Return</a>
+                    </nav>
+                    <div class="details" id="details">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde labore obcaecati tempore non maxime vitae ad cumque id debitis. Necessitatibus soluta nemo reiciendis, enim aspernatur ducimus quasi. Quos nisi iure, ut tempora odio iste nesciunt nemo facilis vitae aliquam earum repellendus atque accusantium, et velit possimus maiores incidunt officia praesentium.
+                        </p> 
+                    </div>
+                    <div class="ingredients hidden" id="ingredients">
+                        <p>
+                            organic blah, healthy natrual blah, and hydrochloride
+                        </p>
+                    </div>
+                    <div class="howto hidden" id="howtouse">
+                        <p>
+                            apply two drops on the face.
+                        </p>
+                    </div>
+                    <div class="shipping-return hidden" id="shippingreturn">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut a totam ex quasi consequatur sunt repudiandae, minima alias quidem aliquid!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <h4>Reviews</h4>
+            <!-- EJS loop using data from MongoDB -->
+            <% users.forEach(user => { %>
+             
+            <div class="review">
+                <div class="reviewer">
+                    <h6><%= user.firstName %> <%= user.lastName %></h6>
+                    <ul class="stars">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                    <p>Skin Type</p>
+                    <p>Skin Concerns</p>
+                </div>
+                <div class="review-detail-section">
+                    <div class="review-title">
+                        <h6>Review Title</h6>
+                        <div class="thumbs">
+                            <a href="#" class="thumb"><img src="/images/thumb_up_alt_24px.png" alt="thumb up"> (1)</a>
+                            <a href="#" class="thumb"><img src="/images/thumb_down_alt_24px.png" alt="thumb down"> (0)</a>
+                        </div>
+                    </div>
+                    <p class="review-detail"><%= user.review %>
+                    </p>
+                </div>
+            </div>
+            <% }) %>
+        </section>
+        <section class="recommended">
+            <h4>RECOMMENDED PRODUCTS</h4>
+            <div class="prod-container">
+                <div class="prod-card">
+                    <img src="/images/products/Product 1.jpg" alt="product 1" class="prod-img">
+                    <ul class="stars">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <p class="rating-number">(134)</p>
+                    </ul>
+                    <h6>Product Name</h6>
+                    <p>Price</p>
+                </div>
+                <div class="prod-card">
+                    <img src="/images/products/Product 4.jpg" alt="product 4" class="prod-img">
+                    <ul class="stars">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <p class="rating-number">(134)</p>
+                    </ul>
+                    <h6>Product Name</h6>
+                    <p>Price</p>
+                </div>
+                <div class="prod-card">
+                    <img src="/images/products/Product 2.jpg" alt="product 2" class="prod-img">
+                    <ul class="stars">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <p class="rating-number">(134)</p>
+                    </ul>
+                    <h6>Product Name</h6>
+                    <p>Price</p>
+                </div>
+                <div class="prod-card">
+                    <img src="/images/products/Product 3.jpg" alt="product 3" class="prod-img">
+                    <ul class="stars">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <p class="rating-number">(134)</p>
+                    </ul>
+                    <h6>Product Name</h6>
+                    <p>Price</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+</body>
+
+
+</html>

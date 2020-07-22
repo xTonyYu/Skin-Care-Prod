@@ -3,17 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skin Care Reviews</title>
+
+    <%- include('partials/head.ejs') %>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/users.css">
+
+    <title>Admin Page</title>
 </head>
 
 <body>
 
     <%- include('partials/nav.ejs') %>
 
-    <h1>Users Index Page</h1>
-    
-</body>
+    <h1>List of Current Users</h1>
 
-<%- include('partials/footer') %>
+    <div class="users-container">
+        <ul class="categories">
+            <li>User Photo</li>
+            <li>Name</li>
+            <li>Email Address</li>
+            <li>Remove?</li>
+        </ul>
+       
+            <% user.forEach((element, index) => { %>
+                <ul class="users <%= index % 2 === 0 ? 'greyarea' : null%>">
+                    <li><img class="leaf" src="<%= element.photoUrl %>"/></li>
+                    <li><%= element.firstName %>
+                        <%= element.lastName %> </li>
+                    <li><%= element.email %> </li>
+                
+                    <li class="del-button">
+                        <form style="display: inline;" action="/users/<%= element._id %>?_method=DELETE" method="POST">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </li>
+
+                </ul>
+            </section>
+            <% }); %>
+    </div>
+
+   <%- include('partials/footer') %>
+
+</body>
 
 </html>

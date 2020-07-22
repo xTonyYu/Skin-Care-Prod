@@ -15,7 +15,13 @@ const userSchema = new mongoose.Schema({
         lowercase: true,
         unique: true,
         required: true
-    }
+    },
+    review: {
+        type: String,
+    },
+    photoUrl: {
+        type: String,
+    },
 });
 
 const User = mongoose.model('User', userSchema);

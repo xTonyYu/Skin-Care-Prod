@@ -1,0 +1,158 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #344438;
+}
+/* 
+* LAYOUT
+****************************************** */
+
+.hidden {
+    display: none;
+}
+
+
+/* 
+ * HEADER
+****************************************** */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BFD7C3; 
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-left: 20px;
+    width: 130px;
+    height: 45.5px;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav li {
+    margin: 10px 0;
+}
+
+.nav li a {
+    color: #344438;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.nav li a:hover {
+    text-decoration: none;
+    border-bottom: solid 4px #e1ffe6 ;
+}
+
+.search {
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 15px;
+    position: relative;
+    width: 250px;
+    height: 30px;
+    
+}
+
+.search input {
+    border: 0;
+    border-radius: 14px;
+    height: 28px;
+    max-width: 246px;
+    padding-left: 27px;
+}
+
+.search img {
+    top: 2px;
+    left: 3px;
+    border-radius: 12px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+
+.icons {
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+.icons a {
+    text-decoration: none;
+
+}
+
+/* 
+* FOOTER
+****************************************** */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #BFD7C3; 
+    margin-top: 10px;
+    padding-top: 15px;
+    bottom: 0;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+.customer-care,
+.about {
+    min-width: 180px;
+    margin: 0 30px;
+}
+
+footer section ul {
+    list-style: none;
+    padding: 0;
+}
+footer section ul a{
+    text-decoration: none;
+    padding: 0;
+    color: #344438;
+    font-size: 13px;
+}
+footer section ul a:hover{
+    text-decoration: none;
+}
+
+.about-us {
+    padding: 0 20px 0 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.copyright {
+    font-size: small;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .search {
+        display: none;
+    }
+    .icons {
+        padding-left: 25px;
+    }
+}

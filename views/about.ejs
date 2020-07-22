@@ -3,32 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skin Care Reviews</title>
+    
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/about.css">
+    
+    <title>About Us</title>
 </head>
 
 <body>
-
-    <%- include('partials/nav.ejs') %>
-
-    <h1>About Us</h1>
-
-    <h3>Ally</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam nostrum ratione autem. Doloremque magnam quis vel possimus atque eaque.</p>
-
-    <h3>Lora</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam nostrum ratione autem. Doloremque magnam quis vel possimus atque eaque.</p>
-
-    <h3>Tony</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam nostrum ratione autem. Doloremque magnam quis vel possimus atque eaque.</p>
-
-    <h3>Hannah</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam nostrum ratione autem. Doloremque magnam quis vel possimus atque eaque.</p>
-
-    <h3>Christine</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam nostrum ratione autem. Doloremque magnam quis vel possimus atque eaque.</p>
     
+    <%- include('partials/nav.ejs') %>
+    <div class="about-page">
+ 
+        <h1 class="float-left">Our Story</h1>
+        <div class="about-sections" style="max-width: 950px;">
+            <img src="/images/selfies/About Page1.png" style="max-width: 950px;">
+        </div>
+        
+        <h1 class="float-left">Who Are We?</h1>
+        <div class="about-sections" style="max-width: 950px;">
+            <img src="/images/selfies/Screen Shot 2020-07-22 at 2.14.58 PM.png" style="max-width: 950px;">
+        </div>
+        
+  
+       
+        <h1 class="float-left">About Us</h1>
+    
+        <section id="team" class="team-container">
+            <div class="team-gallery">
+    
+                <div class="team-member-container">
+                    <div class="selfie-box">
+                        <a href="/show">
+                            <img src="/images/selfies/prof pic.jpeg" alt="selfie">
+                        </a>
+                    </div>
+                    <div class="personal-info">
+                        <h4>Ally Pittman</h4>
+                        <h5>Full Stack Software Developer</h5>
+                        <p>Former Customer Service/Animal Care Worker and Biology Grad turned Software Engineer! I'm a total animal lover and love to hike, swim, play video games, make wood burning art, and hang out with my pets. Current mom to two ball pythons and one spoiled kitty cat.</p>
+                    </div>
+                </div>
+                <div class="team-member-container">
+                    <div class="selfie-box">
+                        <a href="/show">
+                            <img src="/images/selfies/lora.jpg" alt="selfie">
+                        </a>
+                    </div>
+                    <div class="personal-info">
+                        <h4>Lora Paine</h4>
+                        <h5>Full Stack Software Developer</h5>
+                        <p>Avid adventurer with a total fascination of clean tech and energy systems. I am fortunate to have seen the world, and through web development, I am able to share what I have learned with others to better my community in ways previously impossible.</p>
+                    </div>
+                </div>
+                <div class="team-member-container">
+                    <div class="selfie-box">
+                        <a href="/show">
+                            <img src="/images/selfies/IMG_6042 2.JPG" alt="selfie">
+                        </a>
+                    </div>
+                    <div class="personal-info">
+                        <h4>Tony Yu</h4>
+                        <h5>Full Stack Software Developer</h5>
+                        <p>Recovered banker tuned software engineer. I am obligated to take my dog Butter to the beach every week or he’ll make a mess of the house. I enjoy traveling and experience different culture and food.</p>
+                    </div>
+                </div>
+                <div class="team-member-container">
+                    <div class="selfie-box">
+                        <a href="/show">
+                            <img src="images/selfies/IMG_1364.jpg" alt="selfie">
+                        </a>
+                    </div>
+                    <div class="personal-info">
+                        <h4>Christine Chong</h4>
+                        <h5>UX Designer</h5>
+                        <p>Retired Pokemon Go player. I love filming videos, doing yoga, and the aspect I love most about traveling is learning about different cultures while seeing the world through another lens.</p>
+                    </div>
+                </div>
+                <div class="team-member-container">
+                    <div class="selfie-box">
+                        <a href="/show">
+                            <img src="/images/selfies/Profile.JPG" alt="selfie">
+                        </a>
+                    </div>
+                    <div class="personal-info">
+                        <h4>Hannah Thanh Nguyen</h4>
+                        <h5>UX Designer</h5>
+                        <p>I love hiking, cooking new recipes every week, going on a road trip to strange coastal cities with loved ones on weekends and dream to travel around the world to try different cakes.</p>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </section>
+        <hr>
+
+        <!-- <h1 class="float-left">Who are We?</h1> -->
+    </div>
+
+    <%- include('partials/footer') %>
 </body>
-
-<%- include('partials/footer') %>
-
 </html>
