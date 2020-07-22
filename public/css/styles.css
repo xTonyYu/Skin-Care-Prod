@@ -3,6 +3,7 @@
     font-size: 16px;
 }
 
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -21,4 +22,27 @@ header {
 
 nav a {
     padding: 10px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    margin: 50px 50px;
+}
+footer p {
+    font-weight: bold;
+}
+
+.customer-care,
+.about {
+    min-width: 180px;
+    margin: 0 30px;
+}
+
+footer section ul {
+    list-style: none;
+    padding: 0;
 }
