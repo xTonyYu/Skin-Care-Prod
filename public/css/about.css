@@ -72,45 +72,6 @@ h1 {
     margin-top: 40px;
 }
 
-
-/* 
-
-.team-container {
-
+.about-blurb {
+    margin-top: 40px;
 }
-.team-gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.selfie-box {
-    background-color: white;
-    padding: 5px;
-    width: 275px;
-    height: 275px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.team-member-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-h4 {
-    font-size: 16px;
-}
-h5 {
-    font-size: 14px;
-}
-.team-member-container p {
-    font-size: 12px;
-    
-}
-.products-and-info-container p {
-    font-size: 12px;
-} */
