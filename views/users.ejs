@@ -28,7 +28,7 @@
        
             <% user.forEach((element, index) => { %>
                 <ul class="users <%= index % 2 === 0 ? 'greyarea' : null%>">
-                    <li><img class="leaf" src="<%= element.photoUrl %>"/></li>
+                    <li><img class="leaf" src="<%= element.photoUrl %>" alt="profile picture"/></li>
                     <li><%= element.firstName %>
                         <%= element.lastName %> </li>
                     <li><%= element.email %> </li>
