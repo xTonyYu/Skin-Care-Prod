@@ -55,9 +55,15 @@ Clicking the "Our Story" link in the footer will take the user to the team's "Ab
 Figma
 
 HTML5
+
 CSS3
+
 Node.js
+
 Express
+
 EJS
+
 MongoDB
+
 Mongoose
